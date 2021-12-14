@@ -49,7 +49,7 @@
       background: #004d00;
       font-size: 16px;
       color: #fff;
-      cursor: pointer;
+
       }
       button:hover {
       background: #008000;
@@ -63,7 +63,7 @@
 
 <body>
         <div class="textbox" >
-            <form action="{{url_for('predict')}} methode='post">
+            <form action="{{url_for('predict')}}" method="post">
                 <div class="banner">
                     <h1>Battery Life Documents</h1>
                     <h2>Basic Classifier</h2>
@@ -72,48 +72,48 @@
 
                     <label for="min1">What is min?</label>
                     <div class="min1-item">
-                        <input id="first" name="min1" placeholder="range -0.06 to -0.075" required/>
+                        <input id="first" name="min1" placeholder="Type Numbers" required/>
                     </div>
 
                     <label for="log10_Var100_10">What is log variance</label>
                     <div class="log10_Var100_10-item">
-                        <input id="second" name="log10_Var100_10" placeholder="range -3.00 to -4.00" required/>
+                        <input id="second" name="log10_Var100_10" placeholder="Type Numbers" required/>
                     </div>
                     </div>
 
                     <label for="Dis_max">What is Dis_max</label>
                     <div class="Dis_max=item">
-                        <input id="third" name="Dis_max" placeholder="range 1.09 to 1.04" required/>
+                        <input id="third" name="Dis_max" placeholder="Type Numbers" required/>
                     </div>
 
                     <label for="Slope">What is Slope?</label>
                     <div class="Slope-item">
-                        <input id="fourth" name="Slope" placeholder="range-0.00014 to -0.00018" required/>
+                        <input id="fourth" name="Slope" placeholder="Type Numbers" required/>
                     </div>
 
                     <label for="charge_tym">What is Charge time</label>
                     <div class="charge_tym-item">
-                        <input id="five" name="charge_tym" placeholder="range 2200 to 2500" required/>
+                        <input id="five" name="charge_tym" placeholder="Type Numbers" required/>
                     </div>
 
                     <label for="Intercept">What is Intercept?</label>
                     <div class="Intercept-item">
-                        <input id="six" name="Intercept" placeholder="range 1.076 to 1.15" required/>
+                        <input id="six" name="Intercept" placeholder="Type Numbers" required/>
                     </div>
 
                     <label for="Intercept">What is integration?</label>
                     <div class="Intergration-item">
-                        <input id="seven" name="Intergration" placeholder="480233.8779" required/>
+                        <input id="seven" name="Intergration" placeholder="Type Numbers" required/>
                     </div>
 
                     <label for="IR_min">What is iR_min?</label>
                     <div class="IR_min-item">
-                        <input id="eight" name="IR_min" placeholder="range 0.016 to 0.019" required/>
+                        <input id="eight" name="IR_min" placeholder="Type Numbers" required/>
                     </div>
 
                     <label for="IR_min">What is iR_diff?</label>
                     <div class="IR_diff-item">
-                        <input id="nine" name="IR_diff" placeholder="range -0.0009 to -0.0015 " required/>
+                        <input id="nine" name="IR_diff" placeholder="Type Numbers" required/>
                     </div>
 
                     <div class="btn-block">
