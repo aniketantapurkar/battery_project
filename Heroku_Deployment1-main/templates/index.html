@@ -10,33 +10,42 @@
 
     <style>
 
-        body, div, form, input, label {
+         html, body {
+      min-height: 100%;
+      }
+      body, div, form, input, label {
       padding: 0;
       margin: 0;
       outline: none;
       font-family: Roboto, Arial, sans-serif;
       font-size: 13px;
-      color: #666;
-      align-items: center;
+      color: #666;align-items: center;
       text-align: center;
-      backgroundimage: url("https://hdwallsource.com/img/2015/5/battery-wallpaper-47427-48962-hd-wallpapers.jpg");
       }
 
-
-      h1 {
-      line-height: 50px;
-      font-size: 50px;
-      z-index: 2;
+      form {
+      padding: 20px;
+      border-radius: 6px;
+      background: #fff;
+      box-shadow: 0 0 20px 0  #004d00;
+      background-image: url("https://hdwallsource.com/img/2015/5/battery-wallpaper-47427-48962-hd-wallpapers.jpg");
       }
+
 
       input {
-      margin-bottom: 15px;
-      border: 3px solid #ccc;
-      border-radius: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
       }
-
-<!--BUTTON-->
-
+      input {
+      width: calc(350px - 10px);
+      padding: 6px;
+      }
+      .item input:hover {
+      border: 1px solid transparent;
+      box-shadow: 0 0 6px 0 #004d00;
+      color:#004d00;
+      }
       .btn-block {
       margin-top: 10px;
       text-align: center;
@@ -46,13 +55,14 @@
       padding: 10px;
       border: none;
       border-radius: 5px;
-      background: #004d00;
+      background: #FF0099;
       font-size: 16px;
       color: #fff;
-
+      cursor: pointer;
       }
-      button:hover {
-      background: #008000;
+      label {
+        font-size:20px;
+      }
       }
 
       body{
@@ -79,7 +89,7 @@
                     <div class="log10_Var100_10-item">
                         <input id="second" name="log10_Var100_10" placeholder="range -3.00 to -4.00" required/>
                     </div>
-                    </div>
+
 
                     <label for="Dis_max">What is Dis_max</label>
                     <div class="Dis_max=item">
@@ -120,11 +130,11 @@
                         <button type="submit" id="sub">Calculate the Cycle</button>
                     </div>
 
-
+                </div>
 
             </form>
 
-            <br><br><h2>{{ prediction_text }}<h2>
+            <br><br><h1>{{ prediction_text }}<h1>
 
         </div>
 
